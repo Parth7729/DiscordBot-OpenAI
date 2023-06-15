@@ -1,6 +1,5 @@
 const dotenv  = require("dotenv");
 const bot  = require("./src/bot.js");
-const path  = require("path");
 const {loadCommands, printCommands} = require("./src/loadCommands.js");
 
 dotenv.config();

@@ -9,15 +9,25 @@ const execute = async (message, args) => {
     }
 
     else {
-        const response = await openai.createCompletion({
-            model: "text-davinci-003",
-            prompt: args[0], 
-            temperature:0.3,
-            max_tokens:256
-        });
-        await message.reply(response.data.choices[0].text);
+        try {
+            const response = await openai.createCompletion({
+                model: "text-davinci-003",
+                prompt: args[0], 
+                temperature:0.3,
+                max_tokens:4028
+            });
+            await message.reply(response.data.choices[0].text);
+        }
+        catch(err) {
+            try{
+                await message.reply("please try again");
+                console.log("no response from openAI on chat command");
+            }
+            catch(err) {
+                console.log(err);
+            }
+        }
     }
-
 }
 
 
