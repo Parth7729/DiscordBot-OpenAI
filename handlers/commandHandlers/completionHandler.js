@@ -1,7 +1,7 @@
 const openai = require("./../../src/ai.js");
 
 const command = "complete";
-const description = "completes the response to a prompt";
+const description = "$complete : Given a prompt, the model will return one or more predicted completions. e.g. $complete <prompt>";
 
 const execute = async (message, args) => {
     if(args.length === 0) {

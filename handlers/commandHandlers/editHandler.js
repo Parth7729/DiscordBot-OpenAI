@@ -1,7 +1,7 @@
 const openai = require("./../../src/ai.js");
 
 const command = "edit";
-const description = "gives the response to a prompt";
+const description = "$edit : Creates a new edit for the provided input and instruction. Instruction and input should be enclosed in '~'. e.g. $edit ~instruction~ ~input~";
 
 const execute = async (message, args) => {
     if(args.length === 0) {

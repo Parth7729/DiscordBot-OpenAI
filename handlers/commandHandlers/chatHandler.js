@@ -1,7 +1,7 @@
 const openai = require("./../../src/ai.js");
 
 const command = "chat";
-const description = "gives the response to a prompt";
+const description = "$chat : It will return the response for the given prompt. e.g. $chat <prompt>";
 
 const execute = async (message, args) => {
     if(args.length === 0) {

@@ -1,7 +1,7 @@
 const openai = require("./../../src/ai.js");
 
 const command = "code";
-const description = "gives the response to a prompt";
+const description = "$code : Creates a new code or debugs for the provided input and instruction. Instruction and input should be enclosed in '~'. e.g. $code ~instruction~ ~code~ \nNote: It uses an older model so if this commands doesn't run try using $chat command.";
 
 const execute = async (message, args) => {
     if(args.length === 0) {
