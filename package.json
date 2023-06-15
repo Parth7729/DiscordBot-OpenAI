@@ -6,7 +6,7 @@
   "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "run": "node run ./app.js",
+    "start": "node run ./app.js",
     "dev": "nodemon run ./app.js",
     "curr": "nodemon run ./src/actions.js"
   },
