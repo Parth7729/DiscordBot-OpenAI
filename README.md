@@ -34,3 +34,35 @@ To run this project, you will need to add the following environment variables to
 `DISCORD_BOT_TOKEN`
 `apiKey`
 
+
+## Contributing
+
+Contributions are always welcome!
+
+You can append a new command by making a .js file in [commandHandlers](/handlers/commandHandlers) folder. 
+
+It will be a custom js module which must export these 3 parameters: ```command, execute, description```.
+
+```command``` will store the command string.
+
+```execute``` is a function which has the logic for the command. It has 2 parameters- ```message``` ```args```.
+
+```description``` it will have the description of the command.
+
+Example code snippet:
+
+```
+const openai = require("./../../src/ai.js");
+
+const command = "chat"; 
+const description = "$chat : It will return the response for the given prompt. e.g. $chat <prompt>";
+
+const execute = (message, agrs) => {
+    //logic for the command
+}
+
+module.exports =  {command, execute, description};
+
+```
+
+Thank you
