@@ -16,7 +16,7 @@ Implemented 4 commands:
 
 ## Screenshots
 
-![App Screenshot](/Screenshot%20(106).png)
+![App Screenshot](/Screenshot%20(106).png);
 
 ## Installation
 
